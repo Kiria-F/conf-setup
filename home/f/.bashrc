@@ -15,6 +15,10 @@ alias coq='"/home/f/.local/share/Steam/steamapps/common/Caves of Qud/CoQ.x86_64"
 arsip='89.111.155.248'
 alias lib32-wipe="sudo pacman -R $(pacman -Q | grep -o '^lib32\S*' | tr '\n' ' ')"
 
+conf-commit() {
+  read -p 'Commit message: ' commit
+  git --git-dir ~/Documents/conf-setup/.git/ --work-tree ~/Documents/conf-setup/ commit -a -m "$commit"
+}
 alias conf-hyprland='nvim ~/.config/hypr/hyprland.conf'
 alias conf-waybar='nvim ~/.config/waybar/config.jsonc'
 alias conf-waybar-style='nvim ~/.config/waybar/style.css'
