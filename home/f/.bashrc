@@ -18,6 +18,7 @@ alias lib32-wipe="sudo pacman -R $(pacman -Q | grep -o '^lib32\S*' | tr '\n' ' '
 conf-commit() {
   read -p 'Commit message: ' commit
   git --git-dir ~/Documents/conf-setup/.git/ --work-tree ~/Documents/conf-setup/ commit -a -m "$commit"
+  git --git-dir ~/Documents/conf-setup/.git/ --work-tree ~/Documents/conf-setup/ push
 }
 alias conf-hyprland='nvim ~/.config/hypr/hyprland.conf'
 alias conf-waybar='nvim ~/.config/waybar/config.jsonc'
