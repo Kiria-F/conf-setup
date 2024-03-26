@@ -198,6 +198,8 @@ require('lazy').setup({
     end,
   },
 
+  { 'sitiom/nvim-numbertoggle' },
+
   {
     -- Set lualine as statusline
     'nvim-lualine/lualine.nvim',
