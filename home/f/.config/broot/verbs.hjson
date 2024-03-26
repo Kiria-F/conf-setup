@@ -168,9 +168,9 @@ verbs: [
         from_shell: true
     }
     {
-        invokation: "run"
-        key: ctrl-r
-        shortcut: "run"
+        invokation: "execute"
+        key: ctrl-x
+        shortcut: "execute"
         execution: "{file}"
         from_shell: false
     }
