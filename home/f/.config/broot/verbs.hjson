@@ -144,7 +144,7 @@ verbs: [
 
     # You can reproduce the bindings of Norton Commander
     # on copying or moving to the other panel:
-    # {
+    # 
     #     key: F5
     #     external: "cp -r {file} {other-panel-directory}"
     #     leave_broot: false
@@ -170,9 +170,16 @@ verbs: [
     {
         invokation: "execute"
         key: ctrl-x
-        shortcut: "execute"
+        shortcut: "exec"
         execution: "{file}"
         from_shell: false
+    }
+    {
+        invokation: "execute with nohup"
+        key: alt-x
+        shortcut: "execnh"
+        execution: "nohup {file}"
+        leave_broot: false 
     }
 ]
 
