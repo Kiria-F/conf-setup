@@ -286,6 +286,7 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+vim.wo.scrolloff = 9
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
