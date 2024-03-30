@@ -198,6 +198,7 @@ require('lazy').setup({
     end,
   },
 
+  -- Automatic number toggle
   { 'sitiom/nvim-numbertoggle' },
 
   {
@@ -286,6 +287,8 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.number = true
+
+-- Set cursor margin
 vim.wo.scrolloff = 9
 
 -- Enable mouse mode
