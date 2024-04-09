@@ -12,6 +12,7 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias h=Hyprland
 alias coq='"/home/f/.local/share/Steam/steamapps/common/Caves of Qud/CoQ.x86_64"'
+alias py=python
 arsip='89.111.155.248'
 alias lib32-wipe="sudo pacman -R $(pacman -Q | grep -o '^lib32\S*' | tr '\n' ' ')"
 
