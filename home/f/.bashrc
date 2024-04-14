@@ -21,9 +21,6 @@ conf-commit() (
   git --git-dir ~/Documents/conf-setup/.git/ --work-tree ~/Documents/conf-setup/ commit -a -m "$commit"
   git --git-dir ~/Documents/conf-setup/.git/ --work-tree ~/Documents/conf-setup/ push
 )
-git-clone-ssh() (
-  git clone "ssh://"${1//\:/\/}
-)
 alias conf-hyprland='nvim ~/.config/hypr/hyprland.conf'
 alias conf-waybar='nvim ~/.config/waybar/config.jsonc'
 alias conf-waybar-style='nvim ~/.config/waybar/style.css'
