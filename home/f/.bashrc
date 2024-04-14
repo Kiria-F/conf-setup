@@ -48,6 +48,8 @@ alias ssh-ars='kitty +kitten ssh $arsip'
 alias wg-up='wg-quick up ~/wg.conf'
 alias wg-down='wg-quick down ~/wg.conf'
 
+alias nv-swap='br ~/.local/state/nvim/swap'
+
 PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
