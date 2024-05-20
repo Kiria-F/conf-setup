@@ -111,8 +111,10 @@
 
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-disabled": "", // an empty format will hide the module
         "format-wifi": "  {signalStrength}%",
-        "format-ethernet": "{ipaddr}/{cidr}",
+        // "format-ethernet": "{ipaddr}/{cidr}",
+        "format-ethernet": "󰈀 {ipaddr}",
         "tooltip-format": "{essid} - {ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",

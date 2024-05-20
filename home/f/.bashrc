@@ -50,6 +50,8 @@ alias wg-down='wg-quick down ~/wg.conf'
 
 alias nv-swap='br ~/.local/state/nvim/swap'
 
+alias clone='hyprctl dispatch exec kitty `pwd`'
+
 PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
