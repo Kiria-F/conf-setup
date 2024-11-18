@@ -15,6 +15,7 @@ alias coq='"/home/f/.local/share/Steam/steamapps/common/Caves of Qud/CoQ.x86_64"
 alias py=python
 arsip='89.111.155.248'
 alias lib32-wipe="sudo pacman -R $(pacman -Q | grep -o '^lib32\S*' | tr '\n' ' ')"
+alias v=nvim
 
 conf-commit() (
   read -p 'Commit message: ' commit
@@ -37,6 +38,7 @@ alias conf-broot='nvim ~/.config/broot/conf.hjson'
 alias conf-broot-verbs='nvim ~/.config/broot/verbs.hjson'
 alias conf-env='sudo nvim /etc/environment'
 
+alias upd-keyring='sudo pacman -S archlinux-keyring && sudo pacman -Syu'
 alias upd-mirrors='sudo reflector --delay 6 -c Russia -f 20 --save /etc/pacman.d/mirrorlist --verbose'
 alias upd-mkinitcpio='sudo mkinitcpio -p linux'
 alias upd-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
@@ -58,3 +60,5 @@ PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
 
 source /home/f/.config/broot/launcher/bash/br
+
+eval "$(thefuck --alias)"
