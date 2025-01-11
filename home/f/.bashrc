@@ -38,7 +38,7 @@ alias conf-broot='nvim ~/.config/broot/conf.hjson'
 alias conf-broot-verbs='nvim ~/.config/broot/verbs.hjson'
 alias conf-env='sudo nvim /etc/environment'
 
-alias upd-keyring='sudo pacman -S archlinux-keyring && sudo pacman -Syu'
+alias upd-keyring='sudo pacman -S archlinux-keyring'
 alias upd-mirrors='sudo reflector --delay 6 -c Russia -f 20 --save /etc/pacman.d/mirrorlist --verbose'
 alias upd-mkinitcpio='sudo mkinitcpio -p linux'
 alias upd-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
